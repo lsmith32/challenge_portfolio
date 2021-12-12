@@ -1,0 +1,224 @@
+:root {
+    --orange: #C18D21;
+    --blue: #102945;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*Padding*/
+header {
+    padding: 20px, 35px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    height: 65px;
+}
+/*Lauren Smith text*/
+header h1 {
+    font-size: 44px;
+    color: var(--orange);
+    margin: 10;
+    text-align: 50;
+}
+header a {
+    text-decoration: none;
+    color:var(--orange);
+}
+header nav {
+    margin: 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li a {
+    font-size: 30px;
+    padding: 10px 15px;
+    text-decoration: underline;
+    position: static;
+    justify-content: space-between;
+}
+.hero {
+    background-image: url("https://t4.ftcdn.net/jpg/02/99/58/35/360_F_299583549_nhVRkQKMO1mpZ3NBoNz1I8HRUi6aR2w4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero h2 {
+    color: var(--orange);
+    line-height: 290px;
+    font-size: 32px;
+    text-align: right;
+    width: 100%;
+    padding: 15px;
+}
+body, footer {
+    background-color: #cfced0;
+}
+.content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30% 70%;
+}
+.me {
+    color: var(--orange);
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+    margin: 2.5%;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: flex;
+}
+.about-me h2, .contact h2, .examples h2 {
+    font-size: 60px;
+    color: var(--orange);
+    padding: 60px;
+    border-right-style: solid;
+    border-right-color: var(--orange);
+    border-right-width: 5px;
+    margin-top: 10px;
+}
+/*Whole Unit*/
+.RB {
+    position: relative;
+    flex-shrink: 15%;
+    width: 100%;
+    place-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+/*Run Buddy text in image*/
+.run-buddy {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    background-color: var(--blue);
+    color: var(--orange);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 25px var(--blue) solid;
+}
+/*This One text in image*/
+.box2 {
+    position: relative;
+    flex-shrink: 15%;
+    width: 100%;
+    place-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.TSO {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    background-color: var(--blue);
+    color: var(--orange);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 25px var(--blue) solid;
+}
+.img1 {
+    max-width: 100%;
+    border-radius: 15px;
+    border: 3px var(--blue) solid;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    float: left;
+    justify-content: center;
+    display: flex;
+}
+.img2, .img4 {
+    float: right;
+    justify-content: center;
+    display: flex;
+}
+.img1, .img2, .img3, .img4, .run-img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 3px var(--blue) solid;
+    opacity: 85%;
+}
+.img1, .img2, .img3, .img4, .run-img:hover {
+    opacity: 100%;
+}
+.contact-me {
+    text-decoration-line: underline;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-line: underline;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 80%;
+    margin: 0%;
+}
+.contact-me a {
+    text-decoration: none;
+    color:#000000;
+}
+.contact-me nav {
+    margin: 0;
+}
+.contact-me nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    color: var(--orange);
+    text-decoration: underline;
+    width: 100%;
+}
+.contact-me nav ul li a {
+    padding: 10px 15px;
+    text-decoration: underline;
+    font-size: 30px;
+    color: var(--orange);
+    width: 100%;
+}
+footer h2 {
+    background:#cfced0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+}
+.container {
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    bottom:  30px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 35px;
+    border-radius: 8px;
+    border: 3px orange solid;
+}
