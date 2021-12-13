@@ -27,7 +27,7 @@ header h1 {
     font-size: 44px;
     color: var(--orange);
     margin: 10;
-    text-align: 50;
+    text-align: 50%;
 }
 header a {
     text-decoration: none;
@@ -41,23 +41,26 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    align-items: center;
 }
 header nav ul li a {
-    font-size: 30px;
+    font-size: 1.75vw;
     padding: 10px 15px;
     text-decoration: underline;
     position: static;
     justify-content: space-between;
 }
 .hero {
-    background-image: url("https://t4.ftcdn.net/jpg/02/99/58/35/360_F_299583549_nhVRkQKMO1mpZ3NBoNz1I8HRUi6aR2w4.jpg");
-    background-size: cover;
+    background-image: url("Assets/hero.jpg");
+    background-size: contain;
     background-position: center;
     height: 200px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+    
 }
 .hero h2 {
     color: var(--orange);
@@ -67,158 +70,151 @@ header nav ul li a {
     width: 100%;
     padding: 15px;
 }
+.flex-row {
+    display: flex;
+}
 body, footer {
     background-color: #cfced0;
 }
-.content {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 30% 70%;
-}
-.me {
+.me, .contact {
     color: var(--orange);
-    font-size: 30px;
-    width: 100%;
+    width:100%;
     text-align: left;
     margin: 2.5%;
+    font-size: 20px;
     line-height: 1.5;
     display: flex;
     flex-wrap: flex;
 }
-.about-me h2, .contact h2, .examples h2 {
-    font-size: 60px;
+.me h2, .contact h2 {
+    width: 80%;
+    font-size: 45px;
     color: var(--orange);
     padding: 60px;
     border-right-style: solid;
     border-right-color: var(--orange);
     border-right-width: 5px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
-/*Whole Unit*/
-.RB {
-    position: relative;
-    flex-shrink: 15%;
-    width: 100%;
-    place-content: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 10px;
-}
-/*Run Buddy text in image*/
-.run-buddy {
-    position: absolute;
-    left: 0;
-    bottom: 25%;
-    background-color: var(--blue);
+.subclass {
+    padding: 80px;
     color: var(--orange);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: 25px var(--blue) solid;
-}
-/*This One text in image*/
-.box2 {
-    position: relative;
-    flex-shrink: 15%;
-    width: 100%;
-    place-content: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 10px;
-}
-.TSO {
-    position: absolute;
-    left: 0;
-    bottom: 25%;
-    background-color: var(--blue);
-    color: var(--orange);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: 25px var(--blue) solid;
-}
-.img1 {
-    max-width: 100%;
+    margin: 0%;
+    width: 80%;
     border-radius: 15px;
+    display: flex;
+    text-align: left;
+}
+.profile-img {
+    flex-shrink: 100%;
+    display: flex;
     border: 3px var(--blue) solid;
-    padding: 0;
-    margin: 0;
+    width: 20%;
+    margin-right: 20px;
+    float: inline-start;
+    align-content: left;
+}
+.Run-Buddy {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+.container {
+    position: relative;
+    align-content: right;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex: inherit;
+}
+.text-block {
     position: absolute;
-    float: left;
-    justify-content: center;
+    left: 0;
+    bottom: 25%;
+    background-color: var(--blue);
+    color: var(--orange);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 25px var(--blue) solid;
     display: flex;
+    flex-direction: column;
 }
-.img2, .img4 {
-    float: right;
-    justify-content: center;
+.flex-2, .flex-3 {
     display: flex;
+    flex: 200px;
+    justify-content: center;
+    gap: 2%;
+    margin: auto;
+    padding: 20px;
 }
-.img1, .img2, .img3, .img4, .run-img {
-    max-width: 100%;
-    border-radius: 8px;
-    border: 3px var(--blue) solid;
-    opacity: 85%;
+.run-img {
+    height: 95%;
+    width: 82%;
+    justify-content: right;
+    border-radius: 15px;
+    border: 3px var(--orange) solid;
+    opacity:85%;
+    margin: 20px;
 }
-.img1, .img2, .img3, .img4, .run-img:hover {
+.run-img:hover {
     opacity: 100%;
 }
-.contact-me {
-    text-decoration-line: underline;
-    align-items: center;
-    text-decoration: none;
-    text-decoration-line: underline;
+.img {
+    height: 100%;
+    width: 100%;
+    justify-content: right;
+    border-radius: 15px;
+    border: 3px var(--orange) solid;
+    opacity: 85%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    width: 80%;
-    margin: 0%;
+    flex-direction: column;
+    flex: 1;
 }
-.contact-me a {
-    text-decoration: none;
-    color:#000000;
+img:hover {
+    opacity: 100%;
 }
-.contact-me nav {
+.examples {
+    display: flex;
+}
+.examples h2 {
+    font-size: 45px;
+    color: var(--orange);
     margin: 0;
+    padding: 60px;
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: var(--orange);
+    width: 18.5%;
 }
-.contact-me nav ul {
+.contact a {
+    text-decoration: underline;
+    color: var(--orange);
+}
+.contact nav {
+    margin: 7px 0;
+    display: flex;
+}
+.contact nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    font-size: 30px;
-    padding: 10px 15px;
-    color: var(--orange);
-    text-decoration: underline;
-    width: 100%;
 }
-.contact-me nav ul li a {
-    padding: 10px 15px;
-    text-decoration: underline;
-    font-size: 30px;
-    color: var(--orange);
-    width: 100%;
+.contact nav ul li a {
+    padding: 10px 10px;
+    font-size: 1.55vw;
 }
-footer h2 {
-    background:#cfced0;
+footer {
     width: 100%;
     padding: 0;
-    display: flex;
+    justify-content: space-between;
+    display: block;
     flex-wrap: wrap;
-    font-size: 15px;
     text-align: center;
-}
-.container {
-    position: relative;
-}
-.text-block {
-    position: absolute;
-    bottom:  30px;
-    left: 0px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 35px;
-    border-radius: 8px;
-    border: 3px orange solid;
+    color:var(--blue);
 }
