@@ -20,7 +20,6 @@ header {
     position: sticky;
     z-index: 99;
     top: 0;
-    height: 65px;
 }
 /*Lauren Smith text*/
 header h1 {
@@ -31,10 +30,10 @@ header h1 {
 }
 header a {
     text-decoration: none;
-    color:var(--orange);
+    color: var(--orange);
 }
 header nav {
-    margin: 0;
+    margin: 7px 0;
 }
 header nav ul {
     display: flex;
@@ -44,11 +43,9 @@ header nav ul {
     align-items: center;
 }
 header nav ul li a {
-    font-size: 1.75vw;
+    font-size: 1.55vw;
     padding: 10px 15px;
     text-decoration: underline;
-    position: static;
-    justify-content: space-between;
 }
 .hero {
     background-image: url("Assets/hero.jpg");
@@ -58,8 +55,7 @@ header nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: fixed;
-    
+    background-attachment: fixed; 
 }
 .hero h2 {
     color: var(--orange);
